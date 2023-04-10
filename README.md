@@ -1,11 +1,14 @@
 # Blogger
 
-**TODO: Add description**
+This is a test on using The mix build tool and Enumerables.
+
+## Creating the project
+
+Navigate to the folder you wish to create the project and run `mix new blogger`.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `blogger` to your list of dependencies in `mix.exs`:
+Add the HTTPioson dependancy, the package can be installed by adding `blogger` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -14,8 +17,9 @@ def deps do
   ]
 end
 ```
+Then run `mix deps.get` to download and install the dependency.
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/blogger>.
+## Testing
 
+Run `iex -S mix` to start the interactive Elixir shell. Now you can call the function. `Blogger.fetch_blog()`.
+For the second function, pass it a list of strings, then call the function to list passed.
